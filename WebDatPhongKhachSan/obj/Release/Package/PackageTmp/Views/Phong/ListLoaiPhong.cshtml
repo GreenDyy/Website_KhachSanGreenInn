@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewBag.Title = "Các Loại Phòng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<WebDatPhongKhachSan.Models.loaiphong>
+
+<div class="container">
+    @*Giới thiệu*@
+    <div class="text-center mt-5">
+        <h1 class="fw-bold">CHÚNG TÔI CÓ PHÒNG</h1>
+        <p>
+            Các phòng nghỉ trang nhã và dãy phòng sang trọng gợi nhắc lại những tháng ngày đã qua với thiết kế tinh tế và đầy phong cách sẽ cho quý khách cảm giác thoải mái như
+            đang ở nhà. Tại khách sạn GreenInn, tất cả hơn 50 phòng nghỉ đều là phòng không hút thuốc giúp đảm bảo sự thoải mái tối ưu cho khách nghỉ dưỡng tại đây.
+        </p>
+        <p>
+            Tất cả yêu cầu chụp ảnh thời trang, thương mại trong quá trình lưu trú tại khách sạn vui lòng thông báo cho khách sạn vào thời điểm đặt phòng. Khách sạn có quyền yêu
+            cầu thanh toán tiền chụp ảnh khi nhận phòng hoặc từ chối việc chụp ảnh nếu không được thông báo trước.
+        </p>
+    </div>
+
+    <hr />
+
+
+
+    <div class="mt-5" style="">
+        @{int i = 0; }
+        @foreach (var item in Model)
+        {
+
+            if (i % 2 == 0)
+            {
+                <div class="row my-5 py-5 d-flex justify-content-start">
+
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <img class="w-100 h-100 rounded-3 " src="~/Images/Hotels/@item.imgphongs.FirstOrDefault().id_hinh">
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 col-sm-12 my-auto">
+                        <h3 class="fw-bold">@item.ten_loai</h3>
+                        <p class="mt-4">@item.mota</p>
+
+                        <div class="fw-bold">
+                            <p>Số khách: <span class="text-success">@item.so_luong_nguoi </span><i class="fas fa-male text-success"></i></p>
+                            <p class="">Tiện nghi:</p>
+                            <p class="text-success">
+                                <i class="fas fa-bed"> |</i>&ensp;
+                                <i class="fas fa-bathtub"> |</i> &ensp;
+                                <i class="fas fa-coffee"> |</i>&ensp;
+                                <i class="fas fa-cutlery"> |</i>&ensp;
+                                <i class="fas fa-wifi"> |</i>&ensp;
+                                <i class="fas fa-tv"></i>&ensp;
+                            </p>
+                        </div>
+
+                        <a class="btn btn-success rounded-5 mt-3 fw-bold me-2" style="width: 135px" href="/Phong/ChiTietMotLoaiPhong?id_loaiphong=@item.id_loaiphong">XEM CHI TIẾT</a>
+                        <a class="btn btn-outline-success rounded-5 mt-3" style="width: 135px" href="/Phong/ListPhong?id_loaiphong=@item.id_loaiphong">ĐẶT NGAY</a>
+
+                    </div>
+
+                </div>
+            }
+            else
+            {
+                <div class="row my-5 d-flex justify-content-end">
+
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <img class="w-100 h-100 rounded-3 " src="~/Images/Hotels/@item.imgphongs.FirstOrDefault().id_hinh">
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 col-sm-12 my-auto">
+                        <h3 class="fw-bold">@item.ten_loai</h3>
+                        <p class="mt-4">@item.mota</p>
+
+                        <div class="fw-bold">
+                            <p>Số khách: <span class="text-success">@item.so_luong_nguoi </span><i class="fas fa-male text-success"></i></p>
+                            <p class="">Tiện nghi:</p>
+                            <p class="text-success">
+                                <i class="fas fa-bed"> |</i>&ensp;
+                                <i class="fas fa-bathtub"> |</i> &ensp;
+                                <i class="fas fa-coffee"> |</i>&ensp;
+                                <i class="fas fa-cutlery"> |</i>&ensp;
+                                <i class="fas fa-wifi"> |</i>&ensp;
+                                <i class="fas fa-tv"></i>&ensp;
+                            </p>
+                        </div>
+
+                        <a class="btn btn-success rounded-5 mt-3 fw-bold me-2" style="width: 135px" href="/Phong/ChiTietMotLoaiPhong?id_loaiphong=@item.id_loaiphong">XEM CHI TIẾT</a>
+                        <a class="btn btn-outline-success rounded-5 mt-3" style="width: 135px" href="/Phong/ListPhong?id_loaiphong=@item.id_loaiphong">ĐẶT NGAY</a>
+
+                    </div>
+
+                </div>
+            }
+            i++;
+        }
+
+        @*<div class="row card-body mb-5" style="margin-left: 100px">
+                <div class="col-4">
+                    <img class="card-img w-100 h-100 rounded-3" src="~/Images//Wallpaper/wall3.jpg">
+                </div>
+                <div class="col-4 card-text">
+                    <h3 class="">PHÒNG DELUXE</h3>
+                    <p class="mt-4">
+                        Phòng Deluxe với không gian ấm cúng, rộng rãi cùng ban công
+                        thoáng mát sẽ đưa bạn rời xa sự hối hả của thành phố và mang đến sự thoải mái tuyệt vời cho một kỳ nghỉ
+                    </p>
+                    <h5 class="mt-4">Tiện ích</h5>
+                    <p>
+                        <i class="fas fa-bed"></i>&ensp;
+                        <i class="fas fa-bathtub"></i> &ensp;
+                        <i class="fas fa-coffee"></i>&ensp;
+                        <i class="fas fa-cutlery"></i>&ensp;
+                        <i class="fas fa-wifi"></i>&ensp;
+                        <i class="fas fa-tv"></i>&ensp;
+                    </p>
+
+                    <a class="btn btn-success mt-4">XEM CHI TIẾT</a>
+                    <a class="btn btn-success mt-4">ĐẶT NGAY</a>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+
+            <div class="row card-body mb-5" style="margin-left: 200px">
+                <div class="col-4">
+                    <img class="card-img w-100 h-100 rounded-3" src="~/Images//Wallpaper/wall2.jpg">
+                </div>
+                <div class="col-4 card-text">
+                    <h3 class="">PHÒNG LUXURY DELUXE (TWIN / KING)</h3>
+                    <p class="mt-4">
+                        Một không gian trang nhã cùng nội thất sang trọng và tầm nhìn toàn cảnh
+                        bao quát cả thành phố từ trên cao. Hãy tận hưởng những giấc ngủ ngon nhất trên chiếc
+                    </p>
+                    <h5 class="mt-4">Tiện ích</h5>
+                    <p>
+                        <i class="fas fa-bed"></i>&ensp;
+                        <i class="fas fa-bathtub"></i> &ensp;
+                        <i class="fas fa-coffee"></i>&ensp;
+                        <i class="fas fa-cutlery"></i>&ensp;
+                        <i class="fas fa-wifi"></i>&ensp;
+                        <i class="fas fa-tv"></i>&ensp;
+                    </p>
+                    <a class="btn btn-success mt-4">XEM CHI TIẾT</a>
+                    <a class="btn btn-success mt-4">ĐẶT NGAY</a>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+
+            <div class="row card-body mb-5" style="margin-left: 100px">
+                <div class="col-4">
+                    <img class="card-img w-100 h-100 rounded-3" src="~/Images//Wallpaper/wall1.jpg">
+                </div>
+                <div class="col-4 card-text">
+                    <h3 class="">PHÒNG DELUXE CORNER</h3>
+                    <p class="mt-4">Hãy tận hưởng căn phòng ấm cúng với lối trang trí hiện đại và hai ban công thoải mái cùng tầm nhìn tuyệt đẹp toàn cảnh thành phố</p>
+                    <h5 class="mt-4">Tiện ích</h5>
+                    <p>
+                        <i class="fas fa-bed"></i>&ensp;
+                        <i class="fas fa-bathtub"></i> &ensp;
+                        <i class="fas fa-coffee"></i>&ensp;
+                        <i class="fas fa-cutlery"></i>&ensp;
+                        <i class="fas fa-wifi"></i>&ensp;
+                        <i class="fas fa-tv"></i>&ensp;
+                    </p>
+                    <a class="btn btn-success mt-4">XEM CHI TIẾT</a>
+                    <a class="btn btn-success mt-4">ĐẶT NGAY</a>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+
+            <div class="row card-body mb-5" style="margin-left: 200px">
+                <div class="col-4">
+                    <img class="card-img w-100 h-100 rounded-3" src="~/Images//Wallpaper/wall4.jpg">
+                </div>
+                <div class="col-4 card-text">
+                    <h3 class="">PHÒNG LUXURY DELUXE (TWIN / KING)</h3>
+                    <p class="mt-4">
+                        Một không gian trang nhã cùng nội thất sang trọng và tầm nhìn toàn cảnh
+                        bao quát cả thành phố từ trên cao. Hãy tận hưởng những giấc ngủ ngon nhất trên chiếc
+                    </p>
+                    <h5 class="mt-4">Tiện ích</h5>
+                    <p>
+                        <i class="fas fa-bed"></i>&ensp;
+                        <i class="fas fa-bathtub"></i> &ensp;
+                        <i class="fas fa-coffee"></i>&ensp;
+                        <i class="fas fa-cutlery"></i>&ensp;
+                        <i class="fas fa-wifi"></i>&ensp;
+                        <i class="fas fa-tv"></i>&ensp;
+                    </p>
+                    <a class="btn btn-success mt-4">XEM CHI TIẾT</a>
+                    <a class="btn btn-success mt-4">ĐẶT NGAY</a>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>*@
+        @*test 2*@
+    </div>
+
+
+</div>

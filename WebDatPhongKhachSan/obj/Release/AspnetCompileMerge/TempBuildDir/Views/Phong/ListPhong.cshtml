@@ -1,0 +1,312 @@
+﻿
+@{
+    ViewBag.Title = Model.TenLoaiPhong;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model WebDatPhongKhachSan.ViewModels.PhongListPhongDataView
+
+<div class="row my-5">
+    <form class="row p-4 row-cols-sm-auto g-2 border d-flex justify-content-center">
+        @{
+            var curDate = DateTime.Now.ToString("yyyy-MM-dd");
+            var tomorrow = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd");
+        }
+
+        <div class="row">
+
+        </div>
+        <div class="">
+            <label class="fw-bold" for="checkin">Ngày đến</label>
+            <div class="input-group">
+                <input id="checkin" type="date" value="@curDate" class="form-control" placeholder="Ngày đến">
+            </div>
+        </div>
+
+        <div class="">
+            <label class="fw-bold" for="checkout">Ngày đi</label>
+            <div class="input-group">
+                <input id="checkout" type="date" value="@tomorrow" class="form-control" placeholder="Ngày đi">
+            </div>
+        </div>
+
+
+
+        <div class="col-4">
+            <p id="error-message" style="color: red;"></p>
+        </div>
+
+        <script>
+            // Lấy tham chiếu đến các input date và phần hiển thị thông báo lỗi
+            var checkinInput = document.getElementById("checkin");
+            var checkoutInput = document.getElementById("checkout");
+            var errorMessage = document.getElementById("error-message");
+
+            // Thêm sự kiện input cho input date check-out
+            checkoutInput.addEventListener("input", function () {
+                // Lấy giá trị của input date check-in và check-out
+                var checkinDate = new Date(checkinInput.value);
+                var checkoutDate = new Date(checkoutInput.value);
+
+                // Kiểm tra nếu ngày check-out nhỏ hơn ngày check-in
+                if (checkoutDate <= checkinDate) {
+                    errorMessage.textContent = "Ngày check-out không thể nhỏ hơn hoặc bằng ngày check-in.";
+                    btnContinue.setAttribute("disabled", "disabled"); // Ẩn nút Tiếp tục
+                }
+            });
+
+        </script>
+    </form>
+
+</div>
+
+<div class="container">
+    <div class="text-center m-4">
+
+        <h2>@Model.TenLoaiPhong</h2>
+        <p>
+            @Model.MoTaLoaiPhong
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+            <div class="row ">
+                @{
+                    var listImg = ViewBag.ImgPhong;
+                    Random random = new Random();
+                }
+
+                @foreach (var item in Model.PhongS)
+                {
+                    if (item != null)
+                    {
+                        <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
+                            <div class="card rounded-4 p-3">
+                                @{
+                                    int randomIndex = random.Next(listImg.Count);
+                                    WebDatPhongKhachSan.Models.imgphong randomImg = listImg[randomIndex];
+                                }
+                                <img class="rounded-2" src="~/Images//Hotels/@randomImg.id_hinh" />
+                                <div class="card-body">
+                                    <h3 class="text-center fw-bold">@item.ten</h3>
+                                    <div class="fw-bold">
+                                        <p>Số khách: <span class="text-success">@item.loaiphong.so_luong_nguoi </span><i class="fas fa-male text-success"></i></p>
+                                        <p class="">Tiện nghi:</p>
+                                        <p class="text-success">
+                                            <i class="fas fa-bed"> |</i>&ensp;
+                                            <i class="fas fa-bathtub"> |</i> &ensp;
+                                            <i class="fas fa-coffee"> |</i>&ensp;
+                                            <i class="fas fa-cutlery"> |</i>&ensp;
+                                            <i class="fas fa-wifi"> |</i>&ensp;
+                                            <i class="fas fa-tv"></i>&ensp;
+                                        </p>
+                                    </div>
+                                    <p class="fw-bold">Giá: <strong class="text-danger">@item.gia.ToString("N0") VNĐ</strong></p>
+                                    <div class="text-center">
+                                        <a class="btn btn-success rounded-5 fw-bold me-3" style="width: 130px" data-bs-toggle="modal" data-bs-target="#myModal-@item.id_phong" href="">XEM CHI TIẾT</a>
+                                        <button id="btnChoose" class="btn btn-outline-success rounded-5 fw-bold" style="width: 130px" onclick="selectRoom('@item.id_phong' ,'@item.ten', '@item.gia', '@randomImg.id_hinh', '@Model.TenLoaiPhong', '@Model.SoNguoi')">CHỌN</button>
+                                    </div>
+
+                                    <!-- Modal -->
+                                    <div id="myModal-@item.id_phong" class="modal fade" role="dialog">
+                                        <div class="modal-dialog" style="margin-top: 100px">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <img class="rounded-3 card-img-top" src="~/Images//Hotels/@randomImg.id_hinh" height="250" />
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h2>@item.ten</h2>
+                                                    <p>
+                                                        @Model.MoTaLoaiPhong
+                                                    </p>
+                                                    <hr />
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div>
+                                                                <p><i class="fas fa-bed"></i> Giường</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <small>Giường cho @Model.SoNguoi người</small>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+
+                                                            <div class="mt-2">
+                                                                <p><i class="fas fa-cutlery"></i> Đồ ăn thức uống</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <small>Bia</small><br />
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>Coffee</small><br />
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>Whisky</small><br />
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>Vooka</small><br />
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>Soda</small>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div>
+                                                                <p><i class="fas fa-tv"></i> Trang thiết bị</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <small>Đồng hồ báo thức</small>
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>TV</small>
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>Máy lạnh</small>
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>Két sắt</small>
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>Cảnh báo cháy</small>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="mt-2">
+                                                                <p><i class="fas fa-wifi"></i> Tiện nghi</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <small>Wifi miễn phí</small>
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>Dịch vụ chăm sóc khách hàng 24/24</small>
+                                                                    </li>
+                                                                    <li>
+                                                                        <small>Dịch vụ dọn phòng</small>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Đóng</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+
+        <!--thông tin sau khi chọn phòng-->
+
+        <div class="col-4 card h-50 p-4 rounded-4">
+
+            @using (Html.BeginForm("LayThongTinDatPhong", "Phong", FormMethod.Post))
+            {
+                <div id="selectedRoomInfo">
+                    <p class='text-center'>Chọn 1 phòng để tiếp tục</p>
+                </div>
+
+                @Html.Hidden("idPhong", "", new { id = "hiddenIdPhong" })
+                @Html.Hidden("idHinh", "", new { id = "hiddenIdHinh" })
+                @Html.Hidden("tenPhong", "", new { id = "hiddenTenPhong" })
+                @Html.Hidden("tenLoaiPhong", "", new { id = "hiddenTenLoaiPhong" })
+                @Html.Hidden("giaPhong", "", new { id = "hiddenGiaPhong" })
+                @Html.Hidden("soNguoi", "", new { id = "hiddenSoNguoi" })
+                @Html.Hidden("checkin", "", new { id = "hiddenCheckin" })
+                @Html.Hidden("checkout", "", new { id = "hiddenCheckout" })
+
+                <div class="text-center">
+                    <input id="btnContinue" class="btn btn-danger rounded-5" style="width: 150px" type="submit" value="Tiếp tục" disabled />
+                </div>
+
+            }
+        </div>
+
+        <script>
+            var roomSelected = false;
+
+            var selectedRoom = {
+                tenPhong: null,
+                tenLoaiPhong: null,
+                giaPhong: null,
+                soNguoi: null,
+                songay: null,
+                checkin: null,
+                checkout: null,
+                idHinh: null
+            };
+
+            function selectRoom(idPhong, tenPhong, giaPhong, idHinh, tenLoaiPhong, soNguoi) {
+                // Lưu thông tin của phòng được chọn vào các trường ẩn để xử lý qua bên kia
+                document.getElementById("hiddenIdPhong").value = idPhong;
+                document.getElementById("hiddenTenPhong").value = tenPhong;
+                document.getElementById("hiddenTenLoaiPhong").value = tenLoaiPhong;
+                document.getElementById("hiddenGiaPhong").value = giaPhong;
+                document.getElementById("hiddenIdHinh").value = idHinh;
+                document.getElementById("hiddenSoNguoi").value = soNguoi;
+                document.getElementById("hiddenCheckin").value = document.getElementById("checkin").value;
+                document.getElementById("hiddenCheckout").value = document.getElementById("checkout").value;
+
+                // Lấy thông tin của phòng được chọn vào đối tượng selectedRoom
+                selectedRoom.tenPhong = tenPhong;
+                selectedRoom.tenLoaiPhong = tenLoaiPhong;
+                selectedRoom.giaPhong = giaPhong;
+                selectedRoom.idHinh = idHinh;
+                selectedRoom.soNguoi = soNguoi;
+                selectedRoom.checkin = document.getElementById("checkin").value;
+                selectedRoom.checkout = document.getElementById("checkout").value;
+
+                // Tính toán số ngày
+                var checkinDate = new Date(selectedRoom.checkin);
+                var checkoutDate = new Date(selectedRoom.checkout);
+                selectedRoom.soNgay = Math.ceil((checkoutDate - checkinDate) / (1000 * 60 * 60 * 24));
+                    
+
+                // Hiển thị thông tin phòng được chọn trong div có id là "selectedRoomInfo"
+                var showThongTinPhong = document.getElementById("selectedRoomInfo");
+                showThongTinPhong.innerHTML =
+                    "<img class='rounded-1 card-img-top mb-3' src='/Images/Hotels/" + selectedRoom.idHinh + "' />" +
+                    "<p><strong>Ngày đến:  </strong>" + selectedRoom.checkin + "</p>" +
+                    "<p><strong>Ngày đi:  </strong>" + selectedRoom.checkout + "</p>" +
+                    "<p><strong>Số ngày: </strong>" + selectedRoom.soNgay + "</p>" +
+                    "<hr />" +
+                    "<h2>" + selectedRoom.tenPhong + "</h2>" +
+                    "<small><strong>Giá phòng: </strong>" + selectedRoom.giaPhong.toLocaleString("vi-VN") + " VNĐ</small>" +
+                    "<hr />" +
+                    "<p><strong>Tổng tiền: </strong>" + (selectedRoom.giaPhong * selectedRoom.soNgay).toLocaleString("vi-VN") + " VNĐ</p>";
+
+                roomSelected = true;
+
+                // Kích hoạt nút "Book" nếu cả phòng đã được chọn
+                enableOrDisableBookButton();
+            }
+
+            // Hàm enable nút book khi ấn chọn
+            function enableOrDisableBookButton() {
+                var btn = document.getElementById("btnContinue");
+                if (roomSelected) {
+                    btn.removeAttribute("disabled"); // Kích hoạt nút Book
+                } else {
+                    btn.setAttribute("disabled", "disabled"); // Tiếp tục giữ nút Book bị chặn
+                }
+            }
+        </script>
+
+    </div>
+
+</div>

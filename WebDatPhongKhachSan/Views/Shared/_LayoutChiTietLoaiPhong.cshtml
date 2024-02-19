@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - GreenInn</title>
+    <link rel="icon" href="~/Images/Logos/GreenD.png" type="image/x-icon" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!--Ngoằn quèo-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> <!--Dùng cho p-->
+    <!--Segoe UI Variable Display cho header-->
+
+    <style>
+        body {
+            /*font-family: Segoe UI Variable Display, Helvetica, sans-serif;*/
+            font-family: Quicksand, Helvetica, sans-serif;
+        }
+
+        .custom-navbar {
+            position: sticky;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            opacity: 1;
+        }
+        /*dropdown nav*/
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            z-index: 9999;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+            .dropdown a {
+                padding: 12px 16px;
+            }
+
+                .dropdown a:hover {
+                    background-color: #f1f1f1;
+                }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm custom-navbar navbar-dark bg-dark">
+        <div class="container-fluid fw-bold">
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item my-auto m-sm-3">
+                        <a class="navbar-brand" href="~/Home/Index">
+                            <img src="~/Images/Logos/GreenD.png" width="50" height="50"> Green<span style="color: lightseagreen">Inn</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item my-auto">
+                        <a class="nav-link" href="~/Home/Index"> TRANG CHỦ</a>
+                    </li>
+
+                    <li class="nav-item my-auto">
+                        <a class="nav-link" href="~/Phong/ListLoaiPhong"> PHÒNG</a>
+
+                        <div class="dropdown">
+                            @{
+                                var db = new WebDatPhongKhachSan.Models.QLKSEntities();
+                                var listLoaiPhong = db.loaiphongs.ToList();
+
+                            }
+                            @foreach (var loaiphong in listLoaiPhong)
+                            {
+                                <a class="dropdown-item" href="/Phong/ChiTietMotLoaiPhong?id_loaiphong=@loaiphong.id_loaiphong">@loaiphong.ten_loai</a>
+                            }
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item my-auto">
+                        <a class="nav-link" href="@Url.Action("ThuVienAnh", "Gallary")"> THƯ VIỆN ẢNH</a>
+                    </li>
+
+                    <li class="nav-item my-auto">
+                        <a class="nav-link" href="~/Phong/ListLoaiPhong"> ƯU ĐÃI</a>
+                    </li>
+
+                    <li class="nav-item my-auto">
+                        <a class="nav-link" href="@Url.Action("Contact", "Home")"> LIÊN HỆ</a>
+                    </li>
+
+                    <li class="nav-item my-auto btn btn-success rounded-5 btn-sm" style="margin-left: 30px">
+                        <a class="nav-link text-light fw-bold" href="@Url.Action("ListLoaiPhong", "Phong")"> ĐẶT PHÒNG NGAY</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <style>
+
+            .float-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #00800e;
+                color: #fff;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                font-size: 18px;
+                text-align: center;
+                cursor: pointer;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+
+        <a class="float-button nav-link py-3" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fas fa-comments"></i></a>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="position: fixed; bottom: 70px; right: 30px">
+                <!-- Modal content-->
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <div class="d-flex">
+                            <img style="width: 100px; height: 100px;" src="~/Images/Logos/greenbot.png" />
+                            <div class="my-auto text-center">
+                                <h4 class="fw-bold"> BẠN CẦN GỢI Ý ĐĂT PHÒNG?</h4>
+                                <p> trả lời các câu hỏi bên dưới để tôi hỗ trợ bạn</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="modal-body">
+                        @using (Html.BeginForm("GoiYDatPhong", "GoiYDatPhong", FormMethod.Post))
+                        {
+                            <div class="form-horizontal row">
+
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                <div class="form-group col-6 mb-3">
+                                    @Html.Label("soNguoi", "Bạn đi mấy người?", htmlAttributes: new { @class = "control-label fw-bold" })
+                                    <div class="">
+                                        @Html.DropDownList("soNguoi", new SelectList(new List<SelectListItem>
+                                        {
+                                            new SelectListItem { Text = "1", Value = "1" },
+                                            new SelectListItem { Text = "2", Value = "2" }
+                                        }, "Value", "Text"), "Chọn số người ở", new { @class = "form-control w-100", style = "height: 40px", required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-6 mb-3">
+                                    @Html.Label("gioiTinh", "Bạn là nam hay nữ?", htmlAttributes: new { @class = "control-label fw-bold" })
+                                    <div class="">
+                                        @Html.DropDownList("gioiTinh", new SelectList(new List<SelectListItem>
+                                        {
+                                            new SelectListItem { Text = "Nam", Value = "Nam" },
+                                            new SelectListItem { Text = "Nữ", Value = "Nữ" }
+                                        }, "Value", "Text"), "Chọn giới tính", new { @class = "form-control w-100", style = "height: 40px", required = "required" })
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <input class="btn btn-outline-success rounded-2 m-3 fw-bold" style="width: 300px" type="submit" value="GỢI Ý PHÒNG" />
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-bs-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>>
+        @RenderBody()
+    </div>
+
+    <div class="bg-dark">
+        <footer class="container p-5">
+
+            <div class="row text-light">
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="d-flex mb-2">
+                        <a class="navbar-brand" href="~/Home/Index">
+                            <img class="fw-bold" src="~/Images/Logos/GreenD.png" width="50" height="50">
+                        </a>
+                        <a href="~/Home/Index" class="nav-link fw-bold my-auto">Green<span style="color: lightseagreen">Inn</span></a>
+                    </div>
+
+                    <a class="nav-link fst-italic" href="#"><i class="fas fa-envelope"></i>  hotro@greeninn.com.vn</a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h5 class="fw-bold">ĐIỀU KHOẢN & CHÍNH SÁCH</h5>
+                    <a class="nav-link mt-2" href="#">Điều khoản điều kiện</a>
+                    <a class="nav-link mt-2" href="#">Chính sách bảo mật</a>
+                    <a class="nav-link mt-2" href="#">Chính sách thanh toán</a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h5 class="fw-bold">HỖ TRỢ KHÁCH HÀNG</h5>
+                    <a class="nav-link mt-2" href="#">Chính sách hoàn tiền</a>
+                    <a class="nav-link mt-2" href="#">Liên hệ chúng tôi</a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h5 class="fw-bold">THEO DÕI GREENINN</h5>
+
+                    <small class="text-light"><i class="fas fa-phone"></i>&ensp; 0869 809 066</small>
+                    <br />
+                    <small class="text-light"><i class="fas fa-location-arrow"></i>&ensp; greeninn@gmail.com.vn</small>
+                    <br />
+                    <small class="text-light"><i class="fas fa-envelope"></i>&ensp; Lê Trọng Tấn, Tân Phú, Hồ Chí Minh</small>
+
+                    <div class="d-flex">
+                        <a class="m-2" href="#" target="_blank"><img src="~/Images/Logos/facebook.png" /></a>
+                        <a class="m-2" href="#" target="_blank"><img src="~/Images/Logos/instagram.png" /></a>
+                        <a class="m-2" href="https://www.youtube.com/channel/UCyaSI2EvjUPzMU7UOJ8PTbA" target="_blank"><img src="~/Images/Logos/youtube.png" /></a>
+                    </div>
+                </div>
+
+            </div>
+            <br />
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLKSModelStoreContainer" CdmEntityContainer="QLKSEntities">
+    <EntitySetMapping Name="chitietsudungdvs">
+      <EntityTypeMapping TypeName="QLKSModel.chitietsudungdv">
+        <MappingFragment StoreEntitySet="chitietsudungdv">
+          <ScalarProperty Name="tong_tien_dv" ColumnName="tong_tien_dv" />
+          <ScalarProperty Name="so_luong" ColumnName="so_luong" />
+          <ScalarProperty Name="ngay_thue" ColumnName="ngay_thue" />
+          <ScalarProperty Name="id_dichvu" ColumnName="id_dichvu" />
+          <ScalarProperty Name="id_datphong" ColumnName="id_datphong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chitietsudungtbs">
+      <EntityTypeMapping TypeName="QLKSModel.chitietsudungtb">
+        <MappingFragment StoreEntitySet="chitietsudungtb">
+          <ScalarProperty Name="tong_tien_tb" ColumnName="tong_tien_tb" />
+          <ScalarProperty Name="so_luong" ColumnName="so_luong" />
+          <ScalarProperty Name="ngay_thue" ColumnName="ngay_thue" />
+          <ScalarProperty Name="id_thietbi" ColumnName="id_thietbi" />
+          <ScalarProperty Name="id_datphong" ColumnName="id_datphong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="datphongs">
+      <EntityTypeMapping TypeName="QLKSModel.datphong">
+        <MappingFragment StoreEntitySet="datphong">
+          <ScalarProperty Name="trang_thai" ColumnName="trang_thai" />
+          <ScalarProperty Name="loai" ColumnName="loai" />
+          <ScalarProperty Name="so_nguoi_o" ColumnName="so_nguoi_o" />
+          <ScalarProperty Name="tong_tien" ColumnName="tong_tien" />
+          <ScalarProperty Name="tong_tien_hoa_don" ColumnName="tong_tien_hoa_don" />
+          <ScalarProperty Name="tong_tien_tb" ColumnName="tong_tien_tb" />
+          <ScalarProperty Name="tong_tien_dv" ColumnName="tong_tien_dv" />
+          <ScalarProperty Name="phu_thu_checkout" ColumnName="phu_thu_checkout" />
+          <ScalarProperty Name="phu_thu_checkin" ColumnName="phu_thu_checkin" />
+          <ScalarProperty Name="tien_phong" ColumnName="tien_phong" />
+          <ScalarProperty Name="dat_coc" ColumnName="dat_coc" />
+          <ScalarProperty Name="check_out" ColumnName="check_out" />
+          <ScalarProperty Name="check_in" ColumnName="check_in" />
+          <ScalarProperty Name="id_phong" ColumnName="id_phong" />
+          <ScalarProperty Name="id_khachhang" ColumnName="id_khachhang" />
+          <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+          <ScalarProperty Name="id_datphong" ColumnName="id_datphong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="datphongonlines">
+      <EntityTypeMapping TypeName="QLKSModel.datphongonline">
+        <MappingFragment StoreEntitySet="datphongonline">
+          <ScalarProperty Name="gioi_tinh" ColumnName="gioi_tinh" />
+          <ScalarProperty Name="cmnd" ColumnName="cmnd" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="dia_chi" ColumnName="dia_chi" />
+          <ScalarProperty Name="ngay_sinh" ColumnName="ngay_sinh" />
+          <ScalarProperty Name="ten_khachhang" ColumnName="ten_khachhang" />
+          <ScalarProperty Name="trang_thai" ColumnName="trang_thai" />
+          <ScalarProperty Name="so_nguoi_o" ColumnName="so_nguoi_o" />
+          <ScalarProperty Name="tong_tien" ColumnName="tong_tien" />
+          <ScalarProperty Name="check_out" ColumnName="check_out" />
+          <ScalarProperty Name="check_in" ColumnName="check_in" />
+          <ScalarProperty Name="id_phong" ColumnName="id_phong" />
+          <ScalarProperty Name="id_datphong" ColumnName="id_datphong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dichvus">
+      <EntityTypeMapping TypeName="QLKSModel.dichvu">
+        <MappingFragment StoreEntitySet="dichvu">
+          <ScalarProperty Name="gia" ColumnName="gia" />
+          <ScalarProperty Name="ten_dichvu" ColumnName="ten_dichvu" />
+          <ScalarProperty Name="id_dichvu" ColumnName="id_dichvu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="imgphongs">
+      <EntityTypeMapping TypeName="QLKSModel.imgphong">
+        <MappingFragment StoreEntitySet="imgphong">
+          <ScalarProperty Name="id_hinh" ColumnName="id_hinh" />
+          <ScalarProperty Name="id_loaiphong" ColumnName="id_loaiphong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khachhangs">
+      <EntityTypeMapping TypeName="QLKSModel.khachhang">
+        <MappingFragment StoreEntitySet="khachhang">
+          <ScalarProperty Name="gioi_tinh" ColumnName="gioi_tinh" />
+          <ScalarProperty Name="cmnd" ColumnName="cmnd" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="dia_chi" ColumnName="dia_chi" />
+          <ScalarProperty Name="ngay_sinh" ColumnName="ngay_sinh" />
+          <ScalarProperty Name="ten_khachhang" ColumnName="ten_khachhang" />
+          <ScalarProperty Name="id_khachhang" ColumnName="id_khachhang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khachsans">
+      <EntityTypeMapping TypeName="QLKSModel.khachsan">
+        <MappingFragment StoreEntitySet="khachsan">
+          <ScalarProperty Name="dia_chi" ColumnName="dia_chi" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="loaiphongs">
+      <EntityTypeMapping TypeName="QLKSModel.loaiphong">
+        <MappingFragment StoreEntitySet="loaiphong">
+          <ScalarProperty Name="mota" ColumnName="mota" />
+          <ScalarProperty Name="so_luong_nguoi" ColumnName="so_luong_nguoi" />
+          <ScalarProperty Name="ten_loai" ColumnName="ten_loai" />
+          <ScalarProperty Name="id_loaiphong" ColumnName="id_loaiphong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhanviens">
+      <EntityTypeMapping TypeName="QLKSModel.nhanvien">
+        <MappingFragment StoreEntitySet="nhanvien">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="gioi_tinh" ColumnName="gioi_tinh" />
+          <ScalarProperty Name="sdt" ColumnName="sdt" />
+          <ScalarProperty Name="ngay_sinh" ColumnName="ngay_sinh" />
+          <ScalarProperty Name="ten_nhanvien" ColumnName="ten_nhanvien" />
+          <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phongs">
+      <EntityTypeMapping TypeName="QLKSModel.phong">
+        <MappingFragment StoreEntitySet="phong">
+          <ScalarProperty Name="gia" ColumnName="gia" />
+          <ScalarProperty Name="trang_thai" ColumnName="trang_thai" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="id_tang" ColumnName="id_tang" />
+          <ScalarProperty Name="id_loaiphong" ColumnName="id_loaiphong" />
+          <ScalarProperty Name="id_phong" ColumnName="id_phong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="taikhoans">
+      <EntityTypeMapping TypeName="QLKSModel.taikhoan">
+        <MappingFragment StoreEntitySet="taikhoan">
+          <ScalarProperty Name="quyen" ColumnName="quyen" />
+          <ScalarProperty Name="hoat_dong" ColumnName="hoat_dong" />
+          <ScalarProperty Name="mat_khau" ColumnName="mat_khau" />
+          <ScalarProperty Name="ten_dang_nhap" ColumnName="ten_dang_nhap" />
+          <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+          <ScalarProperty Name="id_taikhoan" ColumnName="id_taikhoan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tangs">
+      <EntityTypeMapping TypeName="QLKSModel.tang">
+        <MappingFragment StoreEntitySet="tang">
+          <ScalarProperty Name="ten_tang" ColumnName="ten_tang" />
+          <ScalarProperty Name="id_tang" ColumnName="id_tang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thietbis">
+      <EntityTypeMapping TypeName="QLKSModel.thietbi">
+        <MappingFragment StoreEntitySet="thietbi">
+          <ScalarProperty Name="gia" ColumnName="gia" />
+          <ScalarProperty Name="ten_thietbi" ColumnName="ten_thietbi" />
+          <ScalarProperty Name="id_thietbi" ColumnName="id_thietbi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

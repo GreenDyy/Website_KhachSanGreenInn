@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Release\Package\PackageTmp" managedRuntimeVersion="v4.0" />
+  <setAcl path="E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

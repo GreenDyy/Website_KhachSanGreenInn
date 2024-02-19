@@ -1,0 +1,344 @@
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll.config
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.pdb
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe.config
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.rsp
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.exe
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.rsp
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.AppContext.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Collections.Immutable.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Reflection.Metadata.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe.config
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.rsp
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe.config
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.Web.Infrastructure.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebGrease.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.pdb
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.AssemblyReference.cache
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CoreCompileInputs.cache
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CopyComplete
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.dll
+E:\Codes\Year4\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.pdb
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll.config
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.pdb
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe.config
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.rsp
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.exe
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.rsp
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.AppContext.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Collections.Immutable.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Reflection.Metadata.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe.config
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.rsp
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe.config
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.Web.Infrastructure.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebGrease.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.pdb
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.AssemblyReference.cache
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CoreCompileInputs.cache
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CopyComplete
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.pdb
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.dll.config
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.MachineLearning.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.Core.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Statistics.dll
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.MachineLearning.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.Core.xml
+E:\Codes\Year4\DotNET MVC\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Statistics.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.dll.config
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll.config
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.pdb
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe.config
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.rsp
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.exe
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.rsp
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.AppContext.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Collections.Immutable.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Reflection.Metadata.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe.config
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.rsp
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe.config
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.MachineLearning.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.Core.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Statistics.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.Web.Infrastructure.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebGrease.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.MachineLearning.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.Core.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Statistics.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.pdb
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.AssemblyReference.cache
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CoreCompileInputs.cache
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CopyComplete
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.dll
+D:\Codes\Nam4\DotNet\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.pdb
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.dll.config
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll.config
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.pdb
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe.config
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.rsp
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.exe
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.rsp
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.AppContext.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe.config
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.rsp
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.MachineLearning.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.Core.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Statistics.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebGrease.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.MachineLearning.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.Core.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Statistics.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.pdb
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.AssemblyReference.cache
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CopyComplete
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.dll
+C:\Users\GreenDuy\Downloads\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.pdb
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.dll.config
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll.config
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebDatPhongKhachSan.pdb
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.exe.config
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csc.rsp
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.exe
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\csi.rsp
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.AppContext.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Collections.Immutable.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\System.Reflection.Metadata.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.exe.config
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\vbc.rsp
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\roslyn\VBCSCompiler.exe.config
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.MachineLearning.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.Core.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Statistics.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.Web.Infrastructure.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\WebGrease.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.MachineLearning.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Math.Core.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Accord.Statistics.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\EntityFramework.SqlServer.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Helpers.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Mvc.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Optimization.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.Razor.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Deployment.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\System.Web.WebPages.Razor.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Newtonsoft.Json.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Antlr3.Runtime.pdb
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.AssemblyReference.cache
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CoreCompileInputs.cache
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.csproj.CopyComplete
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.dll
+E:\Codes\Year4\AllDoAn\PTUD_ThongMinh_Va_CNPM_NangCao\WebDatPhongKhachSan\WebDatPhongKhachSan\obj\Debug\WebDatPhongKhachSan.pdb

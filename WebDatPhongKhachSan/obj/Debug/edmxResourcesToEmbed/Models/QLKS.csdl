@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLKSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="QLKSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="chitietsudungdvs" EntityType="QLKSModel.chitietsudungdv" />
+    <EntitySet Name="chitietsudungtbs" EntityType="QLKSModel.chitietsudungtb" />
+    <EntitySet Name="datphongs" EntityType="QLKSModel.datphong" />
+    <EntitySet Name="datphongonlines" EntityType="QLKSModel.datphongonline" />
+    <EntitySet Name="dichvus" EntityType="QLKSModel.dichvu" />
+    <EntitySet Name="imgphongs" EntityType="QLKSModel.imgphong" />
+    <EntitySet Name="khachhangs" EntityType="QLKSModel.khachhang" />
+    <EntitySet Name="khachsans" EntityType="QLKSModel.khachsan" />
+    <EntitySet Name="loaiphongs" EntityType="QLKSModel.loaiphong" />
+    <EntitySet Name="nhanviens" EntityType="QLKSModel.nhanvien" />
+    <EntitySet Name="phongs" EntityType="QLKSModel.phong" />
+    <EntitySet Name="taikhoans" EntityType="QLKSModel.taikhoan" />
+    <EntitySet Name="tangs" EntityType="QLKSModel.tang" />
+    <EntitySet Name="thietbis" EntityType="QLKSModel.thietbi" />
+    <AssociationSet Name="fk_datphong_ctsddv" Association="QLKSModel.fk_datphong_ctsddv">
+      <End Role="datphong" EntitySet="datphongs" />
+      <End Role="chitietsudungdv" EntitySet="chitietsudungdvs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_dichvu_ctsddv" Association="QLKSModel.fk_dichvu_ctsddv">
+      <End Role="dichvu" EntitySet="dichvus" />
+      <End Role="chitietsudungdv" EntitySet="chitietsudungdvs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_datphong_ctsdtb" Association="QLKSModel.fk_datphong_ctsdtb">
+      <End Role="datphong" EntitySet="datphongs" />
+      <End Role="chitietsudungtb" EntitySet="chitietsudungtbs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_dichvu_ctsdtb" Association="QLKSModel.fk_dichvu_ctsdtb">
+      <End Role="thietbi" EntitySet="thietbis" />
+      <End Role="chitietsudungtb" EntitySet="chitietsudungtbs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_khachhang" Association="QLKSModel.fk_khachhang">
+      <End Role="khachhang" EntitySet="khachhangs" />
+      <End Role="datphong" EntitySet="datphongs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_nhanvien" Association="QLKSModel.fk_nhanvien">
+      <End Role="nhanvien" EntitySet="nhanviens" />
+      <End Role="datphong" EntitySet="datphongs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_phong" Association="QLKSModel.fk_phong">
+      <End Role="phong" EntitySet="phongs" />
+      <End Role="datphong" EntitySet="datphongs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_phong_online" Association="QLKSModel.fk_phong_online">
+      <End Role="phong" EntitySet="phongs" />
+      <End Role="datphongonline" EntitySet="datphongonlines" />
+    </AssociationSet>
+    <AssociationSet Name="fk_loaiphong_imgphong" Association="QLKSModel.fk_loaiphong_imgphong">
+      <End Role="loaiphong" EntitySet="loaiphongs" />
+      <End Role="imgphong" EntitySet="imgphongs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_loaiphong" Association="QLKSModel.fk_loaiphong">
+      <End Role="loaiphong" EntitySet="loaiphongs" />
+      <End Role="phong" EntitySet="phongs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__taikhoan__id_nha__3D5E1FD2" Association="QLKSModel.FK__taikhoan__id_nha__3D5E1FD2">
+      <End Role="nhanvien" EntitySet="nhanviens" />
+      <End Role="taikhoan" EntitySet="taikhoans" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tang" Association="QLKSModel.fk_tang">
+      <End Role="tang" EntitySet="tangs" />
+      <End Role="phong" EntitySet="phongs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="chitietsudungdv">
+    <Key>
+      <PropertyRef Name="id_datphong" />
+      <PropertyRef Name="id_dichvu" />
+    </Key>
+    <Property Name="id_datphong" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="id_dichvu" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ngay_thue" Type="DateTime" Precision="0" />
+    <Property Name="so_luong" Type="Int32" />
+    <Property Name="tong_tien_dv" Type="Double" />
+    <NavigationProperty Name="datphong" Relationship="QLKSModel.fk_datphong_ctsddv" FromRole="chitietsudungdv" ToRole="datphong" />
+    <NavigationProperty Name="dichvu" Relationship="QLKSModel.fk_dichvu_ctsddv" FromRole="chitietsudungdv" ToRole="dichvu" />
+  </EntityType>
+  <EntityType Name="chitietsudungtb">
+    <Key>
+      <PropertyRef Name="id_datphong" />
+      <PropertyRef Name="id_thietbi" />
+    </Key>
+    <Property Name="id_datphong" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="id_thietbi" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ngay_thue" Type="DateTime" Precision="0" />
+    <Property Name="so_luong" Type="Int32" />
+    <Property Name="tong_tien_tb" Type="Double" />
+    <NavigationProperty Name="datphong" Relationship="QLKSModel.fk_datphong_ctsdtb" FromRole="chitietsudungtb" ToRole="datphong" />
+    <NavigationProperty Name="thietbi" Relationship="QLKSModel.fk_dichvu_ctsdtb" FromRole="chitietsudungtb" ToRole="thietbi" />
+  </EntityType>
+  <EntityType Name="datphong">
+    <Key>
+      <PropertyRef Name="id_datphong" />
+    </Key>
+    <Property Name="id_datphong" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="id_nhanvien" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="id_khachhang" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="id_phong" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="check_in" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="check_out" Type="DateTime" Precision="3" />
+    <Property Name="dat_coc" Type="Double" />
+    <Property Name="tien_phong" Type="Double" />
+    <Property Name="phu_thu_checkin" Type="Double" />
+    <Property Name="phu_thu_checkout" Type="Double" />
+    <Property Name="tong_tien_dv" Type="Double" />
+    <Property Name="tong_tien_tb" Type="Double" />
+    <Property Name="tong_tien_hoa_don" Type="Double" />
+    <Property Name="tong_tien" Type="Double" />
+    <Property Name="so_nguoi_o" Type="Int32" />
+    <Property Name="loai" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="trang_thai" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="chitietsudungdvs" Relationship="QLKSModel.fk_datphong_ctsddv" FromRole="datphong" ToRole="chitietsudungdv" />
+    <NavigationProperty Name="chitietsudungtbs" Relationship="QLKSModel.fk_datphong_ctsdtb" FromRole="datphong" ToRole="chitietsudungtb" />
+    <NavigationProperty Name="khachhang" Relationship="QLKSModel.fk_khachhang" FromRole="datphong" ToRole="khachhang" />
+    <NavigationProperty Name="nhanvien" Relationship="QLKSModel.fk_nhanvien" FromRole="datphong" ToRole="nhanvien" />
+    <NavigationProperty Name="phong" Relationship="QLKSModel.fk_phong" FromRole="datphong" ToRole="phong" />
+  </EntityType>
+  <EntityType Name="datphongonline">
+    <Key>
+      <PropertyRef Name="id_datphong" />
+    </Key>
+    <Property Name="id_datphong" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_phong" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="check_in" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="check_out" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="tong_tien" Type="Double" Nullable="false" />
+    <Property Name="so_nguoi_o" Type="Int32" Nullable="false" />
+    <Property Name="trang_thai" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="ten_khachhang" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngay_sinh" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="dia_chi" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="sdt" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="cmnd" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="gioi_tinh" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="phong" Relationship="QLKSModel.fk_phong_online" FromRole="datphongonline" ToRole="phong" />
+  </EntityType>
+  <EntityType Name="dichvu">
+    <Key>
+      <PropertyRef Name="id_dichvu" />
+    </Key>
+    <Property Name="id_dichvu" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ten_dichvu" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="chitietsudungdvs" Relationship="QLKSModel.fk_dichvu_ctsddv" FromRole="dichvu" ToRole="chitietsudungdv" />
+  </EntityType>
+  <EntityType Name="imgphong">
+    <Key>
+      <PropertyRef Name="id_loaiphong" />
+      <PropertyRef Name="id_hinh" />
+    </Key>
+    <Property Name="id_loaiphong" Type="Int32" Nullable="false" />
+    <Property Name="id_hinh" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="loaiphong" Relationship="QLKSModel.fk_loaiphong_imgphong" FromRole="imgphong" ToRole="loaiphong" />
+  </EntityType>
+  <EntityType Name="khachhang">
+    <Key>
+      <PropertyRef Name="id_khachhang" />
+    </Key>
+    <Property Name="id_khachhang" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ten_khachhang" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ngay_sinh" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="dia_chi" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="sdt" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="cmnd" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="gioi_tinh" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="datphongs" Relationship="QLKSModel.fk_khachhang" FromRole="khachhang" ToRole="datphong" />
+  </EntityType>
+  <EntityType Name="khachsan">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ten" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dia_chi" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="loaiphong">
+    <Key>
+      <PropertyRef Name="id_loaiphong" />
+    </Key>
+    <Property Name="id_loaiphong" Type="Int32" Nullable="false" />
+    <Property Name="ten_loai" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="so_luong_nguoi" Type="Int32" Nullable="false" />
+    <Property Name="mota" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="imgphongs" Relationship="QLKSModel.fk_loaiphong_imgphong" FromRole="loaiphong" ToRole="imgphong" />
+    <NavigationProperty Name="phongs" Relationship="QLKSModel.fk_loaiphong" FromRole="loaiphong" ToRole="phong" />
+  </EntityType>
+  <EntityType Name="nhanvien">
+    <Key>
+      <PropertyRef Name="id_nhanvien" />
+    </Key>
+    <Property Name="id_nhanvien" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ten_nhanvien" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ngay_sinh" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="sdt" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="gioi_tinh" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="datphongs" Relationship="QLKSModel.fk_nhanvien" FromRole="nhanvien" ToRole="datphong" />
+    <NavigationProperty Name="taikhoans" Relationship="QLKSModel.FK__taikhoan__id_nha__3D5E1FD2" FromRole="nhanvien" ToRole="taikhoan" />
+  </EntityType>
+  <EntityType Name="phong">
+    <Key>
+      <PropertyRef Name="id_phong" />
+    </Key>
+    <Property Name="id_phong" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="id_loaiphong" Type="Int32" Nullable="false" />
+    <Property Name="id_tang" Type="Int32" Nullable="false" />
+    <Property Name="ten" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="trang_thai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="gia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="datphongs" Relationship="QLKSModel.fk_phong" FromRole="phong" ToRole="datphong" />
+    <NavigationProperty Name="datphongonlines" Relationship="QLKSModel.fk_phong_online" FromRole="phong" ToRole="datphongonline" />
+    <NavigationProperty Name="loaiphong" Relationship="QLKSModel.fk_loaiphong" FromRole="phong" ToRole="loaiphong" />
+    <NavigationProperty Name="tang" Relationship="QLKSModel.fk_tang" FromRole="phong" ToRole="tang" />
+  </EntityType>
+  <EntityType Name="taikhoan">
+    <Key>
+      <PropertyRef Name="id_taikhoan" />
+    </Key>
+    <Property Name="id_taikhoan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_nhanvien" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ten_dang_nhap" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="mat_khau" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="hoat_dong" Type="Int32" />
+    <Property Name="quyen" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="nhanvien" Relationship="QLKSModel.FK__taikhoan__id_nha__3D5E1FD2" FromRole="taikhoan" ToRole="nhanvien" />
+  </EntityType>
+  <EntityType Name="tang">
+    <Key>
+      <PropertyRef Name="id_tang" />
+    </Key>
+    <Property Name="id_tang" Type="Int32" Nullable="false" />
+    <Property Name="ten_tang" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="phongs" Relationship="QLKSModel.fk_tang" FromRole="tang" ToRole="phong" />
+  </EntityType>
+  <EntityType Name="thietbi">
+    <Key>
+      <PropertyRef Name="id_thietbi" />
+    </Key>
+    <Property Name="id_thietbi" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ten_thietbi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="chitietsudungtbs" Relationship="QLKSModel.fk_dichvu_ctsdtb" FromRole="thietbi" ToRole="chitietsudungtb" />
+  </EntityType>
+  <Association Name="fk_datphong_ctsddv">
+    <End Type="QLKSModel.datphong" Role="datphong" Multiplicity="1" />
+    <End Type="QLKSModel.chitietsudungdv" Role="chitietsudungdv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="datphong">
+        <PropertyRef Name="id_datphong" />
+      </Principal>
+      <Dependent Role="chitietsudungdv">
+        <PropertyRef Name="id_datphong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_dichvu_ctsddv">
+    <End Type="QLKSModel.dichvu" Role="dichvu" Multiplicity="1" />
+    <End Type="QLKSModel.chitietsudungdv" Role="chitietsudungdv" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dichvu">
+        <PropertyRef Name="id_dichvu" />
+      </Principal>
+      <Dependent Role="chitietsudungdv">
+        <PropertyRef Name="id_dichvu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_datphong_ctsdtb">
+    <End Type="QLKSModel.datphong" Role="datphong" Multiplicity="1" />
+    <End Type="QLKSModel.chitietsudungtb" Role="chitietsudungtb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="datphong">
+        <PropertyRef Name="id_datphong" />
+      </Principal>
+      <Dependent Role="chitietsudungtb">
+        <PropertyRef Name="id_datphong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_dichvu_ctsdtb">
+    <End Type="QLKSModel.thietbi" Role="thietbi" Multiplicity="1" />
+    <End Type="QLKSModel.chitietsudungtb" Role="chitietsudungtb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="thietbi">
+        <PropertyRef Name="id_thietbi" />
+      </Principal>
+      <Dependent Role="chitietsudungtb">
+        <PropertyRef Name="id_thietbi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_khachhang">
+    <End Type="QLKSModel.khachhang" Role="khachhang" Multiplicity="1" />
+    <End Type="QLKSModel.datphong" Role="datphong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khachhang">
+        <PropertyRef Name="id_khachhang" />
+      </Principal>
+      <Dependent Role="datphong">
+        <PropertyRef Name="id_khachhang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_nhanvien">
+    <End Type="QLKSModel.nhanvien" Role="nhanvien" Multiplicity="1" />
+    <End Type="QLKSModel.datphong" Role="datphong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nhanvien">
+        <PropertyRef Name="id_nhanvien" />
+      </Principal>
+      <Dependent Role="datphong">
+        <PropertyRef Name="id_nhanvien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_phong">
+    <End Type="QLKSModel.phong" Role="phong" Multiplicity="1" />
+    <End Type="QLKSModel.datphong" Role="datphong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="phong">
+        <PropertyRef Name="id_phong" />
+      </Principal>
+      <Dependent Role="datphong">
+        <PropertyRef Name="id_phong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_phong_online">
+    <End Type="QLKSModel.phong" Role="phong" Multiplicity="1" />
+    <End Type="QLKSModel.datphongonline" Role="datphongonline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="phong">
+        <PropertyRef Name="id_phong" />
+      </Principal>
+      <Dependent Role="datphongonline">
+        <PropertyRef Name="id_phong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_loaiphong_imgphong">
+    <End Type="QLKSModel.loaiphong" Role="loaiphong" Multiplicity="1" />
+    <End Type="QLKSModel.imgphong" Role="imgphong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="loaiphong">
+        <PropertyRef Name="id_loaiphong" />
+      </Principal>
+      <Dependent Role="imgphong">
+        <PropertyRef Name="id_loaiphong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_loaiphong">
+    <End Type="QLKSModel.loaiphong" Role="loaiphong" Multiplicity="1" />
+    <End Type="QLKSModel.phong" Role="phong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="loaiphong">
+        <PropertyRef Name="id_loaiphong" />
+      </Principal>
+      <Dependent Role="phong">
+        <PropertyRef Name="id_loaiphong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__taikhoan__id_nha__3D5E1FD2">
+    <End Type="QLKSModel.nhanvien" Role="nhanvien" Multiplicity="0..1" />
+    <End Type="QLKSModel.taikhoan" Role="taikhoan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nhanvien">
+        <PropertyRef Name="id_nhanvien" />
+      </Principal>
+      <Dependent Role="taikhoan">
+        <PropertyRef Name="id_nhanvien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tang">
+    <End Type="QLKSModel.tang" Role="tang" Multiplicity="1" />
+    <End Type="QLKSModel.phong" Role="phong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tang">
+        <PropertyRef Name="id_tang" />
+      </Principal>
+      <Dependent Role="phong">
+        <PropertyRef Name="id_tang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

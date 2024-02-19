@@ -1,0 +1,223 @@
+﻿@{
+    ViewBag.Title = "Đặt Phòng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model WebDatPhongKhachSan.Models.datphongonline
+
+<div style=" font-family: Helvetica, sans-serif;">
+    <div class="row p-5 mx-5 mt-5" >
+
+        <div class="col-7">
+
+            <div class="card rounded-4">
+
+                <img class="w-auto rounded-top" style="height: 300px" src="~/Images//Hotels/@Session["IdHinh"]" />
+
+                <div class="row px-4 pt-4">
+                    <hr />
+                    <h4 class="fw-bold text-center">@Session["TenLoaiPhong"] - @Session["TenPhong"]</h4>
+                    <hr />
+                    <div class="col-6">
+                        <div>
+                            <p><i class="fas fa-bed"></i> Giường</p>
+                            <ul>
+                                <li>
+                                    <small>Giường cho @Session["SoNguoi người"]</small>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <p><i class="fas fa-tv"></i> Trang thiết bị</p>
+                            <ul>
+                                <li>
+                                    <small>Đồng hồ báo thức</small>
+                                </li>
+                                <li>
+                                    <small>TV</small>
+                                </li>
+                                <li>
+                                    <small>Máy lạnh</small>
+                                </li>
+                                <li>
+                                    <small>Két sắt</small>
+                                </li>
+                                <li>
+                                    <small>Cảnh báo cháy</small>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row px-4">
+                    <div class="col-6">
+
+
+                        <div class="mt-2">
+                            <p><i class="fas fa-cutlery"></i> Đồ ăn thức uống</p>
+                            <ul>
+                                <li>
+                                    <small>Bia</small><br />
+                                </li>
+                                <li>
+                                    <small>Coffee</small><br />
+                                </li>
+                                <li>
+                                    <small>Whisky</small><br />
+                                </li>
+                                <li>
+                                    <small>Vooka</small><br />
+                                </li>
+                                <li>
+                                    <small>Soda</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6">
+
+
+                        <div class="mt-2">
+                            <p><i class="fas fa-wifi"></i> Tiện nghi</p>
+                            <ul>
+                                <li>
+                                    <small>Wifi miễn phí</small>
+                                </li>
+                                <li>
+                                    <small>Dịch vụ chăm sóc khách hàng 24/24</small>
+                                </li>
+                                <li>
+                                    <small>Dịch vụ dọn phòng</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-5 card p-4">
+            <h4 class="fw-bold text-center">THÔNG TIN ĐẶT PHÒNG</h4>
+            <h5 class="fst-italic text-center">@ViewBag.TenLoaiPhong - @ViewBag.TenPhong</h5>
+            <div class="row">
+                <div class="col-6">
+                    <p class="fw-bold">Ngày đến:</p>
+                    <p class="fw-bold">Ngày đi:</p>
+                    <p class="fw-bold">Số ngày:</p>
+                    <p class="fw-bold"> Số người:   </p>
+                    <p class="fw-bold">Giá phòng:</p>
+                    <h4 class="text-danger">Thành tiền:</h4>
+                </div>
+                <div class="col-6 text-end">
+
+                    <p>@Session["Checkin"]</p>
+                    <p>@Session["Checkout"]</p>
+                    <p>@Session["SoNgay"]</p>
+                    <p>@Session["SoNguoi"]</p>
+                    @{
+                        double giaPhong = (double)Session["GiaPhong"];
+                        int soNgay = (int)Session["SoNgay"];
+                        double tongTien = giaPhong * soNgay;
+                    }
+                    <p>@giaPhong.ToString("N0") VNĐ</p>
+                    <h4 class="text-danger">@tongTien.ToString("N0") VNĐ</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row px-5 mx-5 mb-5">
+        <div class="col-7">
+            <div class="card p-4">
+                <h4 class="fw-bold text-center">THÔNG TIN CHI TIẾT</h4>
+                <hr />
+                @using (Html.BeginForm("ChiTietDatPhong", "Phong", FormMethod.Post))
+                {
+                    <div class="form-horizontal row">
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="form-group col-6 mb-3">
+                            @Html.LabelFor(model => model.ten_khachhang, "Họ và Tên", htmlAttributes: new { @class = "control-label fw-bold" })
+                            <div class="">
+                                @Html.TextBoxFor(model => model.ten_khachhang, new { @class = "form-control w-100", style="height: 40px", placeholder = "Họ và Tên" })
+                                @Html.ValidationMessageFor(model => model.ten_khachhang, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group col-6 mb-3">
+                            @Html.LabelFor(model => model.dia_chi, "Địa chỉ", htmlAttributes: new { @class = "control-label fw-bold" })
+                            <div class="">
+                                @Html.TextBoxFor(model => model.dia_chi, new { @class = "form-control w-100", style = "height: 40px", placeholder = "Địa chỉ" })
+                                @Html.ValidationMessageFor(model => model.dia_chi, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group col-6 mb-3">
+                            @Html.LabelFor(model => model.ngay_sinh, "Ngày sinh", htmlAttributes: new { @class = "control-label fw-bold" })
+                            <div class="">
+                                @Html.TextBoxFor(model => model.ngay_sinh, new { type = "date", @class = "form-control w-100", style = "height: 40px" })
+                                @Html.ValidationMessageFor(model => model.ngay_sinh, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group col-6 mb-3">
+                            @Html.LabelFor(model => model.sdt, "Số điện thoại", htmlAttributes: new { @class = "control-label fw-bold" })
+                            <div class="">
+                                @Html.TextBoxFor(model => model.sdt, new { @class = "form-control w-100", style = "height: 40px", placeholder = "Số điện thoại" })
+                                @Html.ValidationMessageFor(model => model.sdt, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group col-6 mb-3">
+                            @Html.LabelFor(model => model.cmnd, "CMND/CCCD", htmlAttributes: new { @class = "control-label fw-bold" })
+                            <div class="">
+                                @Html.TextBoxFor(model => model.cmnd, new { @class = "form-control w-100", style = "height: 40px", placeholder = "CMND/CCCD" })
+                                @Html.ValidationMessageFor(model => model.cmnd, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group col-6 mb-3">
+                            @Html.LabelFor(model => model.gioi_tinh, "Giới tính", htmlAttributes: new { @class = "control-label fw-bold" })
+                            <div class="">
+                                @Html.DropDownListFor(model => model.gioi_tinh, new SelectList(new List<SelectListItem>
+                                {
+                                    new SelectListItem { Text = "Nam", Value = "Nam" },
+                                    new SelectListItem { Text = "Nữ", Value = "Nữ" }
+                                }, "Value", "Text"), "Chọn giới tính", new { @class = "form-control w-100", style = "height: 40px" })
+                                @Html.ValidationMessageFor(model => model.gioi_tinh, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="idPhong" value="@Session["IdPhong"]" />
+                        <input type="hidden" name="checkin" value="@Session["Checkin"]" />
+                        <input type="hidden" name="checkout" value="@Session["Checkout"]" />
+                        <input type="hidden" name="soNguoi" value="@Session["SoNguoi"]" />
+                        <input type="hidden" name="giaPhong" value="@Session["GiaPhong"]" />
+
+                        <div class="d-flex justify-content-center">
+                            <input class="btn btn-outline-success rounded-2 m-3 fw-bold " style="width: 300px" type="submit" value="ĐẶT PHÒNG" />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-5">
+
+        </div>
+    </div>
+</div>
+
+
+
+
